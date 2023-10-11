@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nodejs-health-check-jstj
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-utel-tenant/e2e-nodejs/nodejs-health-check-jstj@sha256:36258cbf41f78e5bc8cd6aabf15989f6e44dc2566fd0cb3874e290cc801e5215
+        name: my-nodejs
+        resources: {}
+status: {}
