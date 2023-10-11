@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: nodejs-health-check-jstj
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-utel-tenant/e2e-nodejs/nodejs-health-check-jstj@sha256:36258cbf41f78e5bc8cd6aabf15989f6e44dc2566fd0cb3874e290cc801e5215
         name: my-nodejs
         ports:
         - containerPort: 3001
